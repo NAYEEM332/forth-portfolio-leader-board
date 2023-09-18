@@ -1,0 +1,131 @@
+/* -----global----- */
+
+*{
+    margin: 0;
+    font-family: 'honey script';
+    font-weight: 500;
+}
+
+/*  --------------body------------- */
+
+body{
+    background-color: rgb(255, 230, 220);
+}
+
+/* ---------------- main --------------- */
+
+.main-part{
+    max-width: 950px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* -------------- section 1 -------------------------- */
+
+.section-container{
+    padding: 30px 20px;
+
+}
+
+/* 
+--------- player container ------------
+*/
+
+.player-heading{
+    font-size: 30px;
+    margin: 20px 0px;
+    color: blueviolet;
+}
+
+.player-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player-details{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-details img{
+    width: 50px;
+    padding: 7.5px 0 7.5px 0 ;
+}
+
+.player-name{
+    font-size: 20px;
+}
+
+.hr{
+    width: 90%;
+    margin: auto;
+}
+
+/* ---------------section 2------------------------- */
+/* ------------blog section ----------------------- */
+
+.blog-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog-heading{
+    font-size: 30px;
+    color: blueviolet;
+}
+
+.blog-details{
+    display: flex;
+}
+
+.blog-details img{
+    width: 200px;
+    height: 140px;
+    margin-top: 20px;
+}
+
+.blog-title, .blog-description{
+    font-size: 29px;
+    margin: 20px 15px;
+}
+
+.blog-description span{
+    color: blueviolet;
+}
+
+
+
+
+/* 
+------------------------------
+media query / responsive
+------------------------------
+*/
+
+@media only screen and (max-width:668px) {
+    .main-part{
+        max-width: 95%;
+    }
+    .player-heading{
+        text-align: center;
+    }
+    .player-container{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .blog-container{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .blog-heading{
+        text-align: center;
+    }
+    .hr{
+
+    }
+    .blog-details{
+        flex-direction: column;
+    }
+}
