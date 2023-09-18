@@ -17,8 +17,12 @@ body{
 .main-part{
     max-width: 950px;
     margin: 30px auto;
-    background-color: white;
+    border-radius: 10px;
+}
+
+.twoinone{
     border-radius: 5px;
+    background-color: white;
 }
 
 /* -------------- section 1 -------------------------- */
@@ -59,8 +63,10 @@ body{
 }
 
 .hr{
+    background-color: white;
     width: 90%;
     margin: auto;
+    
 }
 
 /* ---------------section 2------------------------- */
@@ -91,12 +97,66 @@ body{
     margin: 20px 15px;
 }
 
-.blog-description span{
+span{
     color: blueviolet;
 }
 
+/* ------------ third section -------------- */
 
+.third-section-container{
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
 
+.course-heading{
+    padding: 25px;
+    font-size: 30px;
+}
+
+.course-img{
+    width: 250px;
+}
+
+.course-star{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.star{
+    width: 12px;
+}
+.dark-star{
+    width: 12px;
+}
+
+.clock{
+    width:15px;
+}
+
+.course-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 25px;
+    width: 95%;
+    margin: auto;
+    gap: 25px;
+    padding-bottom: 50px;
+}
+
+.course-des{
+    background-color: rgb(234, 185, 202);
+    padding: 1px 10px;
+    border-radius: 20px;
+}
+
+.coursess{
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgb(214, 214, 214);
+    padding: 10px;
+}
 
 /* 
 ------------------------------
@@ -107,6 +167,7 @@ media query / responsive
 @media only screen and (max-width:668px) {
     .main-part{
         max-width: 95%;
+        margin: 10px auto;
     }
     .player-heading{
         text-align: center;
@@ -128,4 +189,11 @@ media query / responsive
     .blog-details{
         flex-direction: column;
     }
+    .course-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .course-heading{
+        text-align: center;
+    }
 }
+
