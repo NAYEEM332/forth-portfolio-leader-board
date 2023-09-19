@@ -2,14 +2,57 @@
 
 *{
     margin: 0;
-    font-family: 'honey script';
-    font-weight: 500;
+    /* font-family: 'honey script'; */
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
 /*  --------------body------------- */
 
 body{
     background-color: rgb(255, 230, 220);
+}
+
+/* -------------
+    header
+--------------*/
+
+header{
+    background-color: blueviolet;
+}
+
+.nav-section{
+    max-width: 950px;
+    margin: auto;
+}
+
+.nav-first-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.division-one{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+}
+.division-one img{
+    width: 30px;
+}
+
+.division-two ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.division-two ul li img{
+    width: 51px;
+    height: 51px;
+    padding-top: 5px;
 }
 
 /* ---------------- main --------------- */
@@ -92,9 +135,13 @@ body{
     margin-top: 20px;
 }
 
-.blog-title, .blog-description{
-    font-size: 29px;
-    margin: 20px 15px;
+.blog-title{
+    font-size: 20px;
+    margin: 30px 0 10px 15px;
+}
+
+.blog-description{
+    margin-left: 15px;
 }
 
 span{
@@ -163,6 +210,7 @@ span{
 media query / responsive
 ------------------------------
 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @media only screen and (max-width:668px) {
     .main-part{
@@ -182,9 +230,6 @@ media query / responsive
     }
     .blog-heading{
         text-align: center;
-    }
-    .hr{
-
     }
     .blog-details{
         flex-direction: column;
