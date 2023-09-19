@@ -213,6 +213,9 @@ media query / responsive
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @media only screen and (max-width:668px) {
+    .division-two ul{
+        gap: 10px;
+    }
     .main-part{
         max-width: 95%;
         margin: 10px auto;
